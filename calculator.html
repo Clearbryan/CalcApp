@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Calculator</title>
+	<meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport">
+ 	<meta content="Debt Free" name="keywords">
+  	<meta content="Save Money Solutions" name="description">
+  	<meta content="Save Money Solutions | Home" name="description">
+
+  	<!-- Stylesheet links -->
+  	<link rel="stylesheet" href="./scripts/dist/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="./scripts/dist/css/customstyles.css">
+  	<link rel="stylesheet" href="./fonts/fa/css/all.css">
+</head> 
+<body>
+    <section class="container" id="wrapper">
+        <div class="row">
+            <div class="col-md-5 two mr-2">
+                <form action="" class="form" id="form">
+                    <div class="row">
+                            <strong class="col-12 text-center  text-success alert alert-success mr-2 ml-2">INCOME (MONTHLY)</strong>
+                        <div class="col">
+                            <label for="income"><strong>Net Income</strong></label>
+                            <input type="text" class="form-control form-control-sm income mb-1" id="income" placeholder="Income" onkeypress="return isNumberKey(event)" onpaste="return false">
+
+                            <label for="total" class="totalLabel"><strong class="text-success"> </strong></label><br>
+                            <div class="total" style ="color: #033f0d;"></div>
+                        </div>
+                        <div class="col">
+                            <label for="income"><strong>Additional</strong></label>
+                            <input type="text" class="form-control form-control-sm additionalIncome" id="additionalIncome" placeholder="Additional Income" onkeypress="return isNumberKey(event)" onpaste="return false">
+                        </div><br>
+                    </div>
+                    <div class="row mt-2">
+                        <strong class="col-12 text-center alert alert-danger text-danger alert-sm mr-2 ml-2">EXPENSES (MONTHLY)</strong>
+                        <div class="col">
+                            <label for="rent"><strong>Rentals</strong></label>
+                            <input type="text" class="form-control form-control-sm rentals" id="rentals" placeholder="Rent/Bond" onkeypress="return isNumberKey(event)" onpaste="return false">
+                        </div>
+                        <div class="col">
+                            <label for="income"><strong>Groceries</strong></label>
+                            <input type="text" class="form-control form-control-sm groceries" id="groceries" placeholder="Groceries" onkeypress="return isNumberKey(event)" onpaste="return false">
+                        </div>
+                    </div> 
+                    <div class="row mt-2">
+                        <div class="col">
+                            <label for="fess"><strong>Fees</strong></label>
+                            <input type="text" class="form-control form-control-sm fees" id="fees" placeholder="Fees" onkeypress="return isNumberKey(event)" onpaste="return false">
+                        </div>
+                        <div class="col">
+                            <label for="transport"><strong>Transport</strong></label>
+                            <input type="text" class="form-control form-control-sm transport" id="transport" placeholder="Transport" onkeypress="return isNumberKey(event)" onpaste="return false">
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col">
+                            <label for="rates"><strong>Rates</strong></label>
+                            <input type="text" class="form-control form-control-sm rates" id="rates" placeholder="Water, Electricity etc" onkeypress="return isNumberKey(event)" onpaste="return false">
+                        </div>
+                        <div class="col">
+                            <label for="phone"><strong>Phone</strong></label>
+                            <input type="text" class="form-control form-control-sm phone" id="phone" placeholder="Phone" onkeypress="return isNumberKey(event)" onpaste="return false">
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col">
+                            <label for="levies"><strong>Levies</strong></label>
+                            <input type="text" class="form-control form-control-sm levies" id="levies" placeholder="Levies" onkeypress="return isNumberKey(event)" onpaste="return false">
+                        </div>
+                        <div class="col">
+                            <div for="bank_charges"><strong>Bank Charges</strong></div>
+                            <input type="text" class="form-control form-control-sm bank_charges" id="bank_charges" placeholder="Bank charges" onkeypress="return isNumberKey(event)" onpaste="return false">
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col">
+                            <label for="loan"><strong>Loan(s)</strong></label>
+                            <input type="text" class="form-control form-control-sm loan" id="loan" placeholder="Loan" onkeypress="return isNumberKey(event)" onpaste="return false">
+                        </div>
+                        <div class="col">
+                            <label for="other"><strong>Other</strong></label>
+                            <input type="text" class="form-control form-control-sm other" id="other" placeholder="Other" onkeypress="return isNumberKey(event)" onpaste="return false" >
+                            <div class="other_description mt-1">
+                            </div>
+                        </div>
+                    </div>                               
+                </form>
+                <!-- Form Pagination -->
+                <ul class="col-12 text-center mt-2 ">
+                    <button class="text-center btn btn btn-info calcButton" href="" ><strong>Calculate</strong> <i class="fas fa-calculator fa-1x"></i>
+                    </button>
+                </ul>
+            </div>
+            <div class=" one col-md-5 ml-3">
+              
+            </div>
+        </div>
+    </section>
+	
+
+	
+<script src="./scripts/js/main.js"></script>
+<script src="./scripts/jquery/jquery.min.js"></script>
+<script src="./scripts/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
